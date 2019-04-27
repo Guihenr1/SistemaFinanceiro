@@ -6,3 +6,6 @@ D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro
 D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.csproj.CoreCompileInputs.cache
 D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.AssemblyInfoInputs.cache
 D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.AssemblyInfo.cs
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\SistemaFinanceiro.pdb
+D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.dll
+D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.pdb
