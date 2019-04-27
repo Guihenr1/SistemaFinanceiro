@@ -1,0 +1,5 @@
+D:\SistemaFinanceiro\Persistencia\bin\Debug\netcoreapp2.2\Persistencia.deps.json
+D:\SistemaFinanceiro\Persistencia\bin\Debug\netcoreapp2.2\Persistencia.dll
+D:\SistemaFinanceiro\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.csproj.CoreCompileInputs.cache
+D:\SistemaFinanceiro\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.AssemblyInfoInputs.cache
+D:\SistemaFinanceiro\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.AssemblyInfo.cs

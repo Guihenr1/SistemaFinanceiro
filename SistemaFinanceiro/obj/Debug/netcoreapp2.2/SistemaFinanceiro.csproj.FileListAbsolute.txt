@@ -1,0 +1,8 @@
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\SistemaFinanceiro.deps.json
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\SistemaFinanceiro.runtimeconfig.json
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\SistemaFinanceiro.runtimeconfig.dev.json
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\SistemaFinanceiro.dll
+D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.csprojAssemblyReference.cache
+D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.csproj.CoreCompileInputs.cache
+D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.AssemblyInfoInputs.cache
+D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.AssemblyInfo.cs

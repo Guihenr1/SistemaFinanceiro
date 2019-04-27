@@ -1,0 +1,6 @@
+D:\SistemaFinanceiro\Modelo\bin\Debug\netcoreapp2.2\Modelo.deps.json
+D:\SistemaFinanceiro\Modelo\bin\Debug\netcoreapp2.2\Modelo.dll
+D:\SistemaFinanceiro\Modelo\obj\Debug\netcoreapp2.2\Modelo.csprojAssemblyReference.cache
+D:\SistemaFinanceiro\Modelo\obj\Debug\netcoreapp2.2\Modelo.csproj.CoreCompileInputs.cache
+D:\SistemaFinanceiro\Modelo\obj\Debug\netcoreapp2.2\Modelo.AssemblyInfoInputs.cache
+D:\SistemaFinanceiro\Modelo\obj\Debug\netcoreapp2.2\Modelo.AssemblyInfo.cs
