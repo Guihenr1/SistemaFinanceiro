@@ -231,6 +231,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "PortableConsoleLibs/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/PortableConsoleLibs.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/PortableConsoleLibs.dll": {}
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -358,6 +367,47 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "Db/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "System.Data.SqlClient": "4.6.0"
+        },
+        "compile": {
+          "bin/placeholder/Db.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Db.dll": {}
+        }
+      },
+      "Modelo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "System.Data.SqlClient": "4.6.0"
+        },
+        "compile": {
+          "bin/placeholder/Modelo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Modelo.dll": {}
+        }
+      },
+      "Persistencia/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Db": "1.0.0",
+          "Modelo": "1.0.0",
+          "System.Data.SqlClient": "4.6.0"
+        },
+        "compile": {
+          "bin/placeholder/Persistencia.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Persistencia.dll": {}
         }
       }
     }
@@ -871,6 +921,18 @@
         "netstandard.library.nuspec"
       ]
     },
+    "PortableConsoleLibs/1.0.0": {
+      "sha512": "wNKALW6UU9PLxCsooA3PhSgtby/afKaAP2Xob9UhnoS5NH5kPajbKo0ekwtb2kz11JAJwTFc/2az/E8thhlecA==",
+      "type": "package",
+      "path": "portableconsolelibs/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp2.0/PortableConsoleLibs.dll",
+        "portableconsolelibs.1.0.0.nupkg.sha512",
+        "portableconsolelibs.nuspec"
+      ]
+    },
     "runtime.native.System.Data.SqlClient.sni/4.5.0": {
       "sha512": "zmr7mxqvG7M7qWzPTHQEF0jIOo65vqsnaJ2s7AyZ9JQaSJ3rfXZ7vPGszw1EbvRATu6zsFMdpQeq1g7oaNocOg==",
       "type": "package",
@@ -1164,11 +1226,30 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Db/1.0.0": {
+      "type": "project",
+      "path": "../Db/Db.csproj",
+      "msbuildProject": "../Db/Db.csproj"
+    },
+    "Modelo/1.0.0": {
+      "type": "project",
+      "path": "../Modelo/Modelo.csproj",
+      "msbuildProject": "../Modelo/Modelo.csproj"
+    },
+    "Persistencia/1.0.0": {
+      "type": "project",
+      "path": "../Persistencia/Persistencia.csproj",
+      "msbuildProject": "../Persistencia/Persistencia.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "Db >= 1.0.0",
       "Microsoft.NETCore.App >= 2.2.0",
+      "Modelo >= 1.0.0",
+      "Persistencia >= 1.0.0",
+      "PortableConsoleLibs >= 1.0.0",
       "System.Data.SqlClient >= 4.6.0"
     ]
   },
@@ -1201,7 +1282,17 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\SistemaFinanceiro\\Db\\Db.csproj": {
+              "projectPath": "D:\\SistemaFinanceiro\\Db\\Db.csproj"
+            },
+            "D:\\SistemaFinanceiro\\Modelo\\Modelo.csproj": {
+              "projectPath": "D:\\SistemaFinanceiro\\Modelo\\Modelo.csproj"
+            },
+            "D:\\SistemaFinanceiro\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "D:\\SistemaFinanceiro\\Persistencia\\Persistencia.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1218,6 +1309,10 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "PortableConsoleLibs": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",

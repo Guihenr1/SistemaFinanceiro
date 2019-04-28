@@ -9,3 +9,10 @@ D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro
 D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\SistemaFinanceiro.pdb
 D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.dll
 D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.pdb
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\Db.dll
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\Modelo.dll
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\Persistencia.dll
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\Db.pdb
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\Modelo.pdb
+D:\SistemaFinanceiro\SistemaFinanceiro\bin\Debug\netcoreapp2.2\Persistencia.pdb
+D:\SistemaFinanceiro\SistemaFinanceiro\obj\Debug\netcoreapp2.2\SistemaFinanceiro.csproj.CopyComplete

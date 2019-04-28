@@ -4,9 +4,6 @@ namespace Db
 {
     public class Conexao
     {
-        private static readonly string server = "DESKTOP-22IAHQV\\SQLEXPRESS";
-        private static readonly string database = "SoN_Financeiro";
-
-        public static string GetStringConnection() => $"Server={server};Database={database};";
+        public static string GetStringConnection() => "Data Source=DESKTOP-22IAHQV\\SQLEXPRESS;Initial Catalog=SoN_Financeiro;Integrated Security=True";
     }
 }
