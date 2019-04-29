@@ -1,0 +1,14 @@
+D:\SistemaFinanceiro\Persistencia\bin\Debug\netcoreapp2.2\Persistencia.deps.json
+D:\SistemaFinanceiro\Persistencia\bin\Debug\netcoreapp2.2\Persistencia.dll
+D:\SistemaFinanceiro\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.csproj.CoreCompileInputs.cache
+D:\SistemaFinanceiro\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.AssemblyInfoInputs.cache
+D:\SistemaFinanceiro\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.AssemblyInfo.cs
+D:\SistemaFinanceiro\Persistencia\bin\Debug\netcoreapp2.2\Persistencia.pdb
+D:\SistemaFinanceiro\Persistencia\bin\Debug\netcoreapp2.2\Db.dll
+D:\SistemaFinanceiro\Persistencia\bin\Debug\netcoreapp2.2\Modelo.dll
+D:\SistemaFinanceiro\Persistencia\bin\Debug\netcoreapp2.2\Db.pdb
+D:\SistemaFinanceiro\Persistencia\bin\Debug\netcoreapp2.2\Modelo.pdb
+D:\SistemaFinanceiro\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.csprojAssemblyReference.cache
+D:\SistemaFinanceiro\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.csproj.CopyComplete
+D:\SistemaFinanceiro\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.dll
+D:\SistemaFinanceiro\Persistencia\obj\Debug\netcoreapp2.2\Persistencia.pdb
