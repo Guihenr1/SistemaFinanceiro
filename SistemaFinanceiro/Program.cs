@@ -64,7 +64,56 @@ namespace SistemaFinanceiro
 
                             break;
                         case 2:
-                            WriteLine("Cadastrar");
+                            Title = "NOVA CONTA - CONTROLE FINANCEIRO SON";
+                            Uteis.MontaHeader("CADASTRANDO UMA NOVA CONTA");
+
+                            Clear();
+
+                            Write("Informe uma descrição para a conta: ");
+                            string descricao = ReadLine();
+
+                            Write("Informe o valor: ");
+                            double valor = Convert.ToDouble(ReadLine());
+
+                            Write("Informe o tipo(R para receber P para pagar): ");
+                            char tipo = Convert.ToChar(ReadLine());
+
+                            Write("Informe a data de vencimento: ");
+                            DateTime dataVencimento = DateTime.Parse(ReadLine());
+
+                            Write("Selecione uma categoria pelo ID: \n");
+                            p.categorias = p.categoria.ListarTodos();
+                            table = new ConsoleTable("ID", "Nome");
+
+                            foreach (var c in p.categorias)
+                            {
+                                table.AddRow(c.Id, c.Nome);
+                            }
+                            table.Write();
+
+                            Write("Categoria: ");
+                            int cat_id = Convert.ToInt32(ReadLine());
+                            Categoria categoria_cadastro = p.categoria.GetCategoria(cat_id);
+
+                            Conta conta = new Conta()
+                            {
+                                Descricao = descricao,
+                                Valor = valor,
+                                Tipo = tipo,
+                                DataVencimento = dataVencimento,
+                                Categoria = categoria_cadastro
+                            };
+
+                            p.conta.Salvar(conta);
+
+                            BackgroundColor = ConsoleColor.DarkGreen;
+                            ForegroundColor = ConsoleColor.White;
+                            Uteis.MontaHeader("CONTA CADASTRADA", '+');
+                            ResetColor();
+
+                            ReadLine();
+                            Clear();
+
                             break;
                         case 3:
                             WriteLine("Editar");

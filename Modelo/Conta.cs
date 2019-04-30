@@ -11,6 +11,7 @@ namespace Modelo
         private double _valor;
         private char _tipo;
         private DateTime _data_vencimento;
+        private DateTime _data_cadastro;
         private Categoria _categoria;
 
         public int? Id { get; set; }
@@ -24,6 +25,7 @@ namespace Modelo
         }
 
         public DateTime DataVencimento { get; set; }
+        public DateTime DataCadastro { get; set; }
         public Categoria Categoria { get; set; }
     }
 }
