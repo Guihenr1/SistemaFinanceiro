@@ -52,11 +52,11 @@ namespace SistemaFinanceiro
                             Uteis.MontaHeader("LISTAGEM DE CONTAS");
 
                             p.contas = p.conta.ListarTodos();
-                            ConsoleTable table = new ConsoleTable("ID", "Descrição", "Tipo", "Valor");
+                            ConsoleTable table = new ConsoleTable("ID", "Descrição", "Tipo", "Valor", "Data Vencimento");
 
                             foreach(var c in p.contas)
                             {
-                                table.AddRow(c.Id, c.Descricao, c.Tipo.Equals('R') ? "Receber" : "Pagar", String.Format("{0:c}", c.Valor));
+                                table.AddRow(c.Id, c.Descricao, c.Tipo.Equals('R') ? "Receber" : "Pagar", String.Format("{0:c}", c.Valor), String.Format("{0:dd/MM/yyyy}", c.DataVencimento));
                             }
                             table.Write();
                             ReadLine();
@@ -122,7 +122,26 @@ namespace SistemaFinanceiro
                             WriteLine("Excluir");
                             break;
                         case 5:
-                            WriteLine("Relatório");
+                            Title = "RELATORIOS - CONTROLE FINANCEIRO SON";
+                            Uteis.MontaHeader("RELATORIO POR DATA DE VENCIMENTO");
+
+                            Write("Informe a data inicial: ");
+                            string data_inicial = ReadLine();
+
+                            Write("Informe a data final: ");
+                            string data_final = ReadLine();
+
+                            p.contas = p.conta.ListarTodos(data_inicial, data_final);
+                            table = new ConsoleTable("ID", "Descrição", "Tipo", "Valor", "Data Vencimento");
+
+                            foreach (var c in p.contas)
+                            {
+                                table.AddRow(c.Id, c.Descricao, c.Tipo.Equals('R') ? "Receber" : "Pagar", String.Format("{0:c}", c.Valor), String.Format("{0:dd/MM/yyyy}", c.DataVencimento));
+                            }
+                            table.Write();
+
+                            ReadLine();
+                            Clear();
                             break;
                     }
                 }

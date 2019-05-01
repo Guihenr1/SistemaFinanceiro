@@ -18,11 +18,22 @@ namespace Persistencia
             this.categoria = new CategoriaDAL(new SqlConnection(strConn));
         }
 
-        public List<Conta> ListarTodos()
+        public List<Conta> ListarTodos(string data_inicial = "", string data_final = "")
         {
             List<Conta> contas = new List<Conta>();
 
-            var command = new SqlCommand("select con.id, con.descricao, con.valor, con.tipo, con.data_vencimento, cat.nome, cat.id as categoria_id from contas con inner join categorias cat on con.categoria_id = cat.id", this.conn);
+            StringBuilder sql = new StringBuilder("select con.id, con.descricao, con.valor, con.tipo, con.data_vencimento, cat.nome, cat.id as categoria_id from contas con inner join categorias cat on con.categoria_id = cat.id");
+            
+            var command = new SqlCommand(sql.ToString(), this.conn);
+
+            if (!data_inicial.Equals("") && !data_final.Equals(""))
+            {
+                sql.Append(" where con.data_vencimento between ");
+                sql.Append("@data_inicial and @data_final");
+                command.Parameters.AddWithValue("@data_inicial", data_inicial);
+                command.Parameters.AddWithValue("@data_final", data_final);
+            }
+
             this.conn.Open();
 
             using (SqlDataReader rd = command.ExecuteReader())
@@ -34,6 +45,7 @@ namespace Persistencia
                         Id = Convert.ToInt32(rd["id"].ToString()),
                         Descricao = rd["descricao"].ToString(),
                         Tipo = Convert.ToChar(rd["tipo"].ToString()),
+                        DataVencimento = DateTime.Parse(rd["data_vencimento"].ToString()),
                         Valor = Convert.ToDouble(rd["valor"].ToString())
                     };
                     int id_categoria = Convert.ToInt32(rd["id"].ToString());
